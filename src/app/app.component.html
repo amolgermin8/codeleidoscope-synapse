@@ -1,13 +1,23 @@
 <div class="page">
   <div class="active-container">
     <div class="search-entry-container">
-      <form (ngSubmit)="sendQuery()">
-        <input type="text" placeholder="Enter your query..." [(ngModel)]="query" [ngModelOptions]="{standalone: true}" class="search-bar">
+      <form (ngSubmit)="sendQuery()" class="form-container">
+        <input type="text" placeholder="Ask Trooya..." [(ngModel)]="query" [ngModelOptions]="{standalone: true}" class="search-bar">
         <button type="submit">Search</button>
       </form>
     </div>
     <div class="search-results-container">
       <!-- Display search results here -->
+       <!-- <p class="query">
+        Query: {{query}}
+       </p> -->
+       <p class="search-result">
+        Key Changes:
+URI Construction: Use UriComponentsBuilder to add query parameters to the URL.
+Request Entity: Set up an HttpEntity with the headers but no body (since it’s a GET request).
+HTTP Method: Use HttpMethod.GET to perform the request.
+This setup should properly construct a GET request with the input_token parameter as a query parameter, which is what the Facebook Graph API expects.
+       </p>
     </div>
   </div>
 </div>

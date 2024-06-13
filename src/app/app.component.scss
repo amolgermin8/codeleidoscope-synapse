@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to top, #2e3d1f, #37594d, #567176, #828a91, #a6a6a6);
   }
   
   .active-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,6 +23,12 @@
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   
   .search-bar {
@@ -36,7 +42,7 @@
   
   button[type="submit"] {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #00c9b7;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -47,5 +53,6 @@
   .search-results-container {
     // Style for displaying search results
     // You can use lists, tables, or other elements as needed
+    color: #ccc;
   }
   

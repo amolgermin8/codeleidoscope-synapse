@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { QueryService } from './services/query.service';
+import { ApiserviceService } from './services/apiservice.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,11 +11,12 @@ import { HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, RouterOutlet, FormsModule ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  providers: [QueryService, ApiserviceService]
 })
 export class AppComponent {
 
-  constructor(private queryService: QueryService) {}
+  constructor(private queryService: QueryService, private apiService: ApiserviceService) {}
 
   // use angular form for this
   query: string = '';
@@ -22,18 +24,24 @@ export class AppComponent {
   sendQuery() {
     console.log('Sending query:', this.query);
     if (this.query) { // Check if the query is not empty
-      this.queryService.sendQuery(this.query).subscribe(
+      // this.queryService.sendQuery(this.query)
+      //   .subscribe(
+      //     (response) => {
+      //       console.log('Query response:', response);
+      //     },
+      //     (error) => {
+      //       console.error('Query error:', error);
+      //     }
+      //   );
+
+      this.apiService.getTest("welcome").subscribe(
         (response) => {
-          // Handle the successful response from the backend
-          console.log('Response:', response);
-          // Update the search results container with the response
+          console.log('Query response:', response);
         },
         (error) => {
-          // Handle any errors that occur during the request
-          console.error('Error:', error);
+          console.error('Query error:', error);
         }
       );
     }
-    
   }
 }

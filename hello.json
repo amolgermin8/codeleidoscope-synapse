@@ -1,0 +1,105 @@
+{
+    "solr_timestamp": "2024-05-14T05:38:35.521Z",
+    "response_status": "Not Responded",
+    "uTimeStmp": "2024-05-14T05:38:35.521Z", // TODO
+    "Auth_Loc_state": "Maharashtra",
+    "channel": "www.twitter.com/ICICIBank_Care",
+    "crawlDate": "2024-05-14T05:38:19.357Z",
+    "Authorcity": "Mumbai",
+    "pubDt": "2024-05-14T05:38:08Z",
+    "Auth_Loc_latitude": "19.0762",
+    "Author_Bio": [
+      "Welcome to the official service handle of ICICI Bank. We are here to help you resolve your queries. For updates and offers, follow us on @ICICIBank"
+    ],
+    "AuthorMetrics_Engagement": 21.653487349457617,
+    "Post_Content": "@DipanwitaGupta5 Hello, we know this is important to you. We’d like an opportunity to better this experience. Can you please send us a DM with your contact details by clicking on the link below. We will contact you at the earliest to address your concern. Regards, Team ICICI 1/2",
+    "Author_Reach": [
+      "75.46714631320185"
+    ],
+    "Author_Loc_city": "Mumbai",
+    "AuthorMetrics_Activity": 89.00387736418863,
+    "solr_id": "ab220918-28bd-301f-82f2-24a83934b7ec",
+    "Author_Loc_longitude": "72.8759",
+    "Author_Verified": [
+      "true"
+    ],
+    "AuthorMetrics_Reach": 75.46714631320185,
+    "siteRank": 1,
+    "relevance": true,
+    "ALoc_longitude": "72.8759",
+    "Replied_to_reply": [
+      "1790244741948596383"
+    ],
+    "post_country": "GLO",
+    "domain": "twitter.com",
+    "hdfsReadTimeStmp": "2024-05-14T05:38:33.164Z",
+    "AuthorMetrics_InfluenceScore": 73,
+    "Post_FavoriteCount": [
+      "0"
+    ],
+    "Post_Ref_Authors": [
+      "http://twitter.com/dipanwitagupta5"
+    ],
+    "status": "NO_ANALYSIS",
+    "analyisiUpadateDate": "2024-05-14T05:38:25.393Z",
+    "relevanceSource": "Trackchannel",
+    "rootId": "1fcceb40-3676-3397-b18c-ff324ee09a13",
+    "Author_Activity": [
+      "89.00387736418863"
+    ],
+    "Post_ShareCount": [
+      "0"
+    ],
+    "channelCategory": "author",
+    "media": "microBlog",
+    "Post_ReplyToTweetId": [
+      "1790244741948596383"
+    ],
+    "authorId": "63752206##twitter.com",
+    "ALoc_latitude": "19.0762",
+    "authorUpdDt": "2024-05-14T05:38:26.394Z",
+    "authUrl": "http://twitter.com/icicibank_care",
+    "Auth_Loc_country": "India",
+    "sentimentScore": 0,
+    "sentiment type": "neutral",
+    "ALoc_state": "Maharashtra",
+    "Author_Engagement": [
+      "21.653487349457617"
+    ],
+    "lang": "en",
+    "analytical engine Id": "1fcceb40-3676-3397-b18c-ff324ee09a13",
+    "userName": "icicibank_care",
+    "cId": "1fcceb40-3676-3397-b18c-ff324ee09a13",
+    "ALoc_country": "India",
+    "influenceScore": 73,
+    "responseCommentId": "1790255254165926391",
+    "Author_Avatar": [
+      "https://pbs.twimg.com/profile_images/1121638315004874752/FiJuL1hN_normal.png"
+    ],
+    "CLoc_address": "Mumbai, India",
+    "url": "http://www.twitter.com/icicibank_care/statuses/1790255254165926391",
+    "aAuthName": "ICICI Bank Cares",
+    "isMainPost": true,
+    "AuthorMetrics_Followers": 332533,
+    "cAuthName": "ICICI Bank Cares",
+    "AuthorMetrics_Following": 7,
+    "isDeleted": false,
+    "firstRelevanceTimeStand": "2024-05-14T05:38:35.521Z",
+    "hdfsWriteTimeStmp": [
+      "2024-05-14T05:38:26.394Z"
+    ],
+    "siteDomain": "http://www.twitter.com",
+    "C_Followers-1234567": [
+      "C_50001-1234567"
+    ],
+    "prId": "ffb369qo",
+    "rootPrId": "ffb369qo",
+    "docUpdateTS": "2024-05-14T05:38:35.522Z",
+    "pubDtHalfHour": 6,
+    "pubDtHour": 5,
+    "interactionId": "icic-789995826-ffb369nq",
+    "retags": [
+      "interactionId"
+    ],
+    "_version_": 1799005266143871000
+  }
