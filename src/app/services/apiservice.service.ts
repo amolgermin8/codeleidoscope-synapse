@@ -11,7 +11,7 @@ export class ApiserviceService {
   // GET request
   getTest(query: string): Observable<any> {
     console.log('Third party call service called');
-    const url = "http://localhost:8080/synapse/interaction/search/test?query=" + query;
+    const url = "http://localhost:8080/synapse/trooya/search/test?query=" + query;
 
 
     return this.http.get<any>(url );

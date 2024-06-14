@@ -1,50 +1,39 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, map } from 'rxjs';
+import { Observable, catchError, map } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class QueryService {
 
   constructor(
     private http: HttpClient
   ) { }
 
-  // api call to backend to send POST request
-  // {
-  //   query:string
-  // }
-
-  sendQuery(query: string) {
-    const url = "http://localhost:8080/synapse/interaction/search";
+  sendQuery(query: string): Observable<any> {
+    const url = "http://localhost:8080/synapse/trooya/search?query="+query;
     
-
-
-    return this.http.get(url, { params: { query } }).pipe(
+    // return this.http.get<string>(url, { params: { query } });
+    return this.http.get(url, { responseType: 'text' }).pipe(
       map(response => {
-        console.log(response);
-        return response.toString();
+          // Assuming the response is JSON formatted string, we need to parse it
+          console.log(response);
+          return response;
       }),
       catchError(error => {
-        console.error('Error fetching data:', error);
-        throw error;
+          console.error('Error fetching data:', error);
+          throw error;
       })
-    );
+  );
+    // .pipe(
+    //   map(response => {
+    //     console.log(response);
+    //     return response;
+    //   }),
+    //   catchError(error => {
+    //     console.error('Error fetching data:', error);
+    //     throw error;
+    //   })
+    // );
   }
-
-  // searchPostMethod(query: string) {
-  //   const url = "http://localhost:8080/synapse/interaction/search";
-  //   return this.http.post(url, { query }).pipe(
-  //     map(response => {
-  //       console.log(response);
-  //       return response.toString();
-  //     }),
-  //     catchError(error => {
-  //       console.error('Error fetching data:', error);
-  //       throw error;
-  //     })
-  //   );
-  // }
 
 }

@@ -1,23 +1,29 @@
 <div class="page">
-  <div class="active-container">
-    <div class="search-entry-container">
-      <form (ngSubmit)="sendQuery()" class="form-container">
-        <input type="text" placeholder="Ask Trooya..." [(ngModel)]="query" [ngModelOptions]="{standalone: true}" class="search-bar">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-    <div class="search-results-container">
-      <!-- Display search results here -->
-       <!-- <p class="query">
-        Query: {{query}}
-       </p> -->
-       <p class="search-result">
-        Key Changes:
-URI Construction: Use UriComponentsBuilder to add query parameters to the URL.
-Request Entity: Set up an HttpEntity with the headers but no body (since it’s a GET request).
-HTTP Method: Use HttpMethod.GET to perform the request.
-This setup should properly construct a GET request with the input_token parameter as a query parameter, which is what the Facebook Graph API expects.
-       </p>
+
+
+  <div class="header">
+    <h1 class="title">
+      Trooya Synapse<sup>t</sup>
+    </h1>
+  </div>
+
+  <div class="hidden-layer">
+    <div class="active-container">
+      <div class="search-entry-container">
+        <form (ngSubmit)="sendQuery()" class="form-container">
+          <input type="text" placeholder="Ask Trooya..." [(ngModel)]="query" [ngModelOptions]="{standalone: true}" class="search-bar">
+          <button type="submit" [disabled]="disableButton" [style.opacity]="disableButton ? 0.3 : 1"><mat-icon>send</mat-icon></button>
+        </form>
+      </div>
+      <div class="search-results-container">
+        <!-- Display search results here -->
+        <!-- <p class="query">
+          Query: {{query}}
+        </p> -->
+        <p class="search-result">
+          {{result}}
+        </p>
+      </div>
     </div>
   </div>
 </div>
